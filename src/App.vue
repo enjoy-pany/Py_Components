@@ -1,9 +1,12 @@
 <template>
   <div id="app">
-    <h1>{{message}}</h1>
+    <h1 class="title">{{message}}</h1>
     <ul class="navList">
       <li>
         <router-link to="/pagination">分页器</router-link>
+      </li>
+      <li>
+        <router-link to="/select_search">搜索下拉框</router-link>
       </li>
       <li>
         <router-link to="/test">测试</router-link>
@@ -37,6 +40,10 @@ export default {
   a {
     text-decoration: none;
   }
+  .title {
+    text-align: center;
+    margin-bottom: 20px;
+  }
   .navList {
     width: 100%;
     height: 32px;
@@ -62,10 +69,11 @@ export default {
   }
   .viewShow {
     width: 100%;
-    height: 100%;
+    min-height: 350px;
     border: 2px #d1d1d1 solid;
     background-color: #fff;
     box-sizing: border-box;
+    padding: 20px;
   }
   .readMeShow {
     width: 100%;
