@@ -1,6 +1,6 @@
-# vue-cli
+# Py_components
 
-> A Vue.js project
+> A Vue Component Warehouse
 
 ## Build Setup
 
