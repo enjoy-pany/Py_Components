@@ -9,6 +9,9 @@
         <router-link to="/select_search">搜索下拉框</router-link>
       </li>
       <li>
+        <router-link to="/alert">Alert弹框</router-link>
+      </li>
+      <li>
         <router-link to="/test">测试</router-link>
       </li>
     </ul>
@@ -50,7 +53,7 @@ export default {
     display: flex;
     justify-content: flex-start;
     align-items: center;
-    font-size: 20px;
+    font-size: 16px;
     border: 2px #d1d1d1 solid;
     border-bottom: none;
     box-sizing: border-box;

@@ -3,6 +3,7 @@ import Router from 'vue-router'
 
 import Pagination from '@/view/paginationView'
 import selectSearch from '@/view/selectSearchView'
+import Alert from '@/view/alertView'
 
 Vue.use(Router)
 
@@ -29,6 +30,11 @@ export default new Router({
         path: '/select_search',
         name: 'select_search',
         component: selectSearch
+    },
+    {
+        path: '/alert',
+        name: 'alert',
+        component: Alert
     }
   ]
 })
