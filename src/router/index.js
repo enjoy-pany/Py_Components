@@ -4,6 +4,7 @@ import Router from 'vue-router'
 import Pagination from '@/view/paginationView'
 import selectSearch from '@/view/selectSearchView'
 import Alert from '@/view/alertView'
+import Swiper from '@/view/swiperView'
 
 Vue.use(Router)
 
@@ -35,6 +36,11 @@ export default new Router({
         path: '/alert',
         name: 'alert',
         component: Alert
+    },
+    {
+        path: '/swiper',
+        name: 'swiper',
+        component: Swiper
     }
   ]
 })

@@ -12,6 +12,9 @@
         <router-link to="/alert">Alert弹框</router-link>
       </li>
       <li>
+        <router-link to="/swiper">轮播</router-link>
+      </li>
+      <li>
         <router-link to="/test">测试</router-link>
       </li>
     </ul>
