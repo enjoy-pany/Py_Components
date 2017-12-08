@@ -3,9 +3,9 @@
     <h2>Hello, this is swiper review</h2>
     <swiper :options="swiperOption" ref="mySwiper">
      <!-- slides -->
-     <swiper-slide>I'm Slide 1</swiper-slide>
-     <swiper-slide>I'm Slide 2</swiper-slide>
-     <swiper-slide>I'm Slide 3</swiper-slide>
+     <swiper-slide class="slide-styl">I'm Slide 1</swiper-slide>
+     <swiper-slide class="slide-styl">I'm Slide 2</swiper-slide>
+     <swiper-slide class="slide-styl">I'm Slide 3</swiper-slide>
      <!-- Optional controls -->
      <div class="swiper-pagination"  slot="pagination"></div>
      <div class="swiper-button-prev" slot="button-prev"></div>
@@ -17,6 +17,7 @@
 
 <script>
 // import Swiper from '../components/Swiper'
+import 'swiper/dist/css/swiper.css'
 import { swiper, swiperSlide } from 'vue-awesome-swiper'
 export default {
  name: 'carrousel',
@@ -107,5 +108,9 @@ export default {
     -ms-flex-align: center;
     -webkit-align-items: center;
     align-items: center;
+  }
+  .slide-styl{
+    height: 200px;
+    background: #f1f1f1;
   }
 </style>

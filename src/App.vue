@@ -15,6 +15,15 @@
         <router-link to="/swiper">轮播</router-link>
       </li>
       <li>
+        <router-link to="/drag">拖拽</router-link>
+      </li>
+      <li>
+        <router-link to="/contentmenu">自定义右键菜单</router-link>
+      </li>
+      <li>
+        <router-link to="/scroll_top">吸顶菜单栏</router-link>
+      </li>
+      <li>
         <router-link to="/test">测试</router-link>
       </li>
     </ul>

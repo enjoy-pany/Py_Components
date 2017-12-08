@@ -5,6 +5,9 @@ import Pagination from '@/view/paginationView'
 import selectSearch from '@/view/selectSearchView'
 import Alert from '@/view/alertView'
 import Swiper from '@/view/swiperView'
+import Drag from '@/view/dragView'
+import ContentMenu from '@/view/contentmenuView'
+import ScrollTop from '@/view/scrollTopView'
 
 Vue.use(Router)
 
@@ -41,6 +44,21 @@ export default new Router({
         path: '/swiper',
         name: 'swiper',
         component: Swiper
-    }
+    },
+    {
+      path: '/drag',
+      name: 'drag',
+      component: Drag
+  },
+  {
+    path: '/contentmenu',
+    name: 'contentmenu',
+    component: ContentMenu
+},
+{
+  path: '/scroll_top',
+  name: 'scroll_top',
+  component: ScrollTop
+}
   ]
 })
