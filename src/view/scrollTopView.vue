@@ -1,12 +1,12 @@
 <template>
-  <div v-scroll>
-    <ul class="navBar" ref="navHeader">
+  <div class="navMain" v-scroll>
+    <div class="navBar" ref="navHeader">
       <li v-for="(item, index) in navMenu" :id="item.id" :key="index" @click="tabNav(index)">
         <p :class="{active: nowTab == index}">{{item.name}}</p>
       </li>
-    </ul>
+    </div>
     <div class="navCon">
-      <h1>tttttttttttttttttttttttttttttt</h1>
+      ttttttttttttt
     </div>
   </div>
 </template>
@@ -42,6 +42,7 @@ export default {
   directives: {
     scroll: {
       inserted(el) {
+        const _navMain = document.querySelector('.navMain')
         document.onscroll = function(event) {
           const offsetTop = el.offsetTop
           const scrollTop = (window.pageYOffset || document.documentElement.scrollTop || document.body.scrollTop)
@@ -53,12 +54,10 @@ export default {
             _navBar.style.position = 'fixed'
             _navBar.style.left = 0
             _navBar.style.top = 0
-            _navCon.style.paddingTop = '125px'
           } else {
             _navBar.style.position = 'static'
             _navBar.style.left = 0
             _navBar.style.top = 0
-            _navCon.style.paddingTop = '0'
           }
         }
       }
@@ -69,9 +68,15 @@ export default {
 </script>
 
 <style lang="scss" scoped>
+.navMain {
+  width: 300px;
+  height: 500px;
+  border: 1px #ccc solid;
+  margin: 0 auto;
+}
 .navBar {
-  width: 500px;
-  height: 125px;
+  width: 100%;
+  height: 50px;
   border: 2px #eee solid;
   background: #fff;
   border-left: none;
@@ -89,8 +94,8 @@ export default {
     p {
       width: auto;
       height: 100%;
-      line-height: 125px;
-      font-size: 24px;
+      line-height: 50px;
+      font-size: 16px;
       color: #999;
     }
     .active {
