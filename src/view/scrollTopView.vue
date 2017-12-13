@@ -1,6 +1,6 @@
 <template>
   <div class="navMain" v-scroll>
-    <div class="navBar" ref="navHeader">
+    <div class="navbar" ref="navHeader">
       <li v-for="(item, index) in navMenu" :id="item.id" :key="index" @click="tabNav(index)">
         <p :class="{active: nowTab == index}">{{item.name}}</p>
       </li>
@@ -46,18 +46,18 @@ export default {
         document.onscroll = function(event) {
           const offsetTop = el.offsetTop
           const scrollTop = (window.pageYOffset || document.documentElement.scrollTop || document.body.scrollTop)
-          const _navBar = document.querySelector('.navBar')
+          const _navbar = document.querySelector('.navbar')
           const _navCon = document.querySelector('.navCon')
           // console.log('offsetTop:' + offsetTop)
           // console.log('scrollTop:' + scrollTop)
           if (scrollTop > offsetTop) {
-            _navBar.style.position = 'fixed'
-            _navBar.style.left = 0
-            _navBar.style.top = 0
+            _navbar.style.position = 'fixed'
+            _navbar.style.left = 0
+            _navbar.style.top = 0
           } else {
-            _navBar.style.position = 'static'
-            _navBar.style.left = 0
-            _navBar.style.top = 0
+            _navbar.style.position = 'static'
+            _navbar.style.left = 0
+            _navbar.style.top = 0
           }
         }
       }
@@ -74,7 +74,7 @@ export default {
   border: 1px #ccc solid;
   margin: 0 auto;
 }
-.navBar {
+.navbar {
   width: 100%;
   height: 50px;
   border: 2px #eee solid;
@@ -105,7 +105,7 @@ export default {
   }
 }
 
-.navBarActive {
+.navbarActive {
   position: fixed;
   top: 0;
   left: 0;

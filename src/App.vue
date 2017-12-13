@@ -24,6 +24,9 @@
         <router-link to="/scroll_top">吸顶菜单栏</router-link>
       </li>
       <li>
+        <router-link to="/anchor">锚点定位</router-link>
+      </li>
+      <li>
         <router-link to="/test">测试</router-link>
       </li>
     </ul>
@@ -61,10 +64,11 @@ export default {
   }
   .navList {
     width: 100%;
-    height: 32px;
+    height: auto;
     display: flex;
     justify-content: flex-start;
     align-items: center;
+    flex-wrap: wrap;
     font-size: 16px;
     border: 2px #d1d1d1 solid;
     border-bottom: none;

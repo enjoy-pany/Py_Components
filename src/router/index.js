@@ -8,10 +8,11 @@ import Swiper from '@/view/swiperView'
 import Drag from '@/view/dragView'
 import ContentMenu from '@/view/contentmenuView'
 import ScrollTop from '@/view/scrollTopView'
+import Anchor from '@/view/anchorView'
 
 Vue.use(Router)
 
-const Test = {template: '<div>test</div>'}
+const Test = { template: '<div>test</div>' }
 
 export default new Router({
   routes: [
@@ -26,39 +27,44 @@ export default new Router({
       component: Test
     },
     {
-        path: '/pagination',
-        name: 'pagination',
-        component: Pagination
+      path: '/pagination',
+      name: 'pagination',
+      component: Pagination
     },
     {
-        path: '/select_search',
-        name: 'select_search',
-        component: selectSearch
+      path: '/select_search',
+      name: 'select_search',
+      component: selectSearch
     },
     {
-        path: '/alert',
-        name: 'alert',
-        component: Alert
+      path: '/alert',
+      name: 'alert',
+      component: Alert
     },
     {
-        path: '/swiper',
-        name: 'swiper',
-        component: Swiper
+      path: '/swiper',
+      name: 'swiper',
+      component: Swiper
     },
     {
       path: '/drag',
       name: 'drag',
       component: Drag
-  },
-  {
-    path: '/contentmenu',
-    name: 'contentmenu',
-    component: ContentMenu
-},
-{
-  path: '/scroll_top',
-  name: 'scroll_top',
-  component: ScrollTop
-}
+    },
+    {
+      path: '/contentmenu',
+      name: 'contentmenu',
+      component: ContentMenu
+    },
+    {
+      path: '/scroll_top',
+      name: 'scroll_top',
+      component: ScrollTop
+    },
+    {
+      path: '/anchor',
+      name: 'anchor',
+      component: Anchor
+    }
   ]
 })
